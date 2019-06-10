@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+}
+
+/* Nav Component */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  position: fixed;
+}
+
+.companyName {
+  color: #FEC810;
+  font-family: 'Kaushan Script',Arial,sans-serif;
+  margin: 1rem;
+  margin-left: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-basis: 500px;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+.toggle {
+  display: none;
+}
+
+/* Jumbotron Component */
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('./assets/header-bg.jpg');
+  background-size: 100vw;
+  height: 150vh;
+  color: white;
+  top: -100px;
+}
+
+
+.jumbotron h3 {
+  font-size: 3rem;
+  font-family: 'Kaushan Script',Arial,sans-serif;
+  margin-bottom: 1rem;
+}
+
+.jumbotron h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.jumboBtn {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FEC810;
+  width: 13rem;
+  height: 4rem;
+}
+
+/* Services */
+
+.servicesHeader {
+    height: 10rem;
+    margin-bottom: 3rem;
+}
+
+.servicesHeader h2 {
+  font-size: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.servicesHeader h6 {
+  margin-bottom: 3rem;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  width: 25vw;
+}
+
+i {
+  width: 9rem;
+  height: 9rem;
+  font-size: 4.5rem;
+  padding-top: 2.2rem;
+  background: #FEC810;
+  color: #FFF;
+  border-radius: 50%;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+
+  /* Nav Component */
+  .toggle {
+    background-image: url('./assets/header-bg.jpg');
+    display: contents;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .navCollapse {
+    /* background: #242328; */
+    background: #2A2A2C;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    /* margin-right: 2rem; */
+    /* border-radius: 15px; */
+  }
+  
+  .navbarNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  /* Jumbotron Component */
+  .jumbotron {
+    height: 110vh;
+  }
+
+  .jumbotron h3 {
+    font-size: 1.5rem;
+  }
+  
+  .jumbotron h1 {
+    font-size: 2.5rem;
+  }
+}
